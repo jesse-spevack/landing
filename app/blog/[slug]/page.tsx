@@ -14,7 +14,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  const posts: Post[] = await fetch('http://localhost:3000/api/content').then(
+  const posts: Post[] = await fetch(process.env.URL + '/api/content').then(
     (res) => res.json()
   );
 
@@ -29,7 +29,7 @@ export default async function BlogPostPage({ params }: Props) {
     redirect('/api/auth/signin');
   }
 
-  const posts: Post[] = await fetch('http://localhost:3000/api/content').then(
+  const posts: Post[] = await fetch(process.env.URL + '/api/content').then(
     (res) => res.json()
   );
 
