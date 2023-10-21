@@ -5,15 +5,15 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl">
-        <h1 className="pt-8 text-7xl font-bold">Deploy Rails</h1>
+        <h1 className="pt-8 text-7xl font-bold">Do you miss the Heroku free tier?</h1>
         <div className="pt-4">
-          <p className="text-zinc-400 text-2xl">
-            Learn fast, simple, and cheap deployment techniques so you can get your Rails application to production.
+          <p className="text-zinc-400 text-xl">
+            Do not let expensive hosting and confusing documentation stop you from deploying your Ruby on Rails application. 
           </p>
         </div>
         <div className="pt-4">
-          <p className="text-zinc-400">
-            Coming Q1 2024 - Sign up to be notified when RailsDeploy tutorials become available.
+          <p className="text-zinc-400 font-light">
+            Accepting sign ups soon. Coming Q1 2024.
           </p>
         </div>
         <form className="mt-5 sm:flex sm:items-center">
@@ -42,34 +42,34 @@ export default function Home() {
         <div className="py-8 text-4xl font-bold">
           <h2>Features</h2>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 text-zinc-400">
           <FeatureCard 
-            feature="Clear writing" 
-            description="Authored with the novice in mind. Tutorials follow a step by step approach." 
-            iconName="book" 
+            feature="Low Cost" 
+            description="Deploy Rails Guides will pay for itself after one month on most platform as a service providers." 
+            iconName="dollar" 
           />
           <FeatureCard 
-            feature="Deploy fast" 
-            description="Get your app into production quickly with fast-paced, easy to follow tutorials that leave nothing to chance." 
-            iconName="bolt" 
-          />
-          <FeatureCard 
-            feature="Learn AWS" 
-            description="Build your proficiency with AWS services like EC2, EKS, RDS." 
-            iconName="cloud" 
-          />
-          <FeatureCard 
-            feature="Multiple options" 
-            description="Learn the right deployment strategy that fits your unique use case." 
+            feature="Multiple Options" 
+            description="Follow our easy-to-use flow chart to pick the best deployment strategy for your needs." 
             iconName="adjust" 
           />
           <FeatureCard 
-            feature="Code samples" 
+            feature="Deploy Fast" 
+            description="Get your app into production now with our step-by-step and always-up-to-date guides." 
+            iconName="bolt" 
+          />
+          <FeatureCard 
+            feature="Learn DevOps" 
+            description="Build your devops repertoire and increase your marketability." 
+            iconName="wrench" 
+          />
+          <FeatureCard 
+            feature="Code Samples" 
             description="All the code you need to get up and running." 
             iconName="code" 
           />
           <FeatureCard 
-            feature="Educator approved" 
+            feature="Educator Built" 
             description="Tutorials co-written by a technology educator and former educator turned developer." 
             iconName="academic" 
           />
