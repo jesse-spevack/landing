@@ -11,23 +11,23 @@ interface Props {
 const getIconFromName = (iconName: Icons) => {
   switch (iconName) {
     case 'academic':
-      return <AcademicCapIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <AcademicCapIcon className="h-8 w-8 inline mr-2" />;
     case 'adjust':
-      return <AdjustmentsHorizontalIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <AdjustmentsHorizontalIcon className="h-8 w-8 inline mr-2" />;
     case 'bolt':
-      return <BoltIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <BoltIcon className="h-8 w-8 inline mr-2" />;
     case 'book':
-      return <BookOpenIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <BookOpenIcon className="h-8 w-8 inline mr-2" />;
     case 'cloud':
-      return <CloudArrowUpIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <CloudArrowUpIcon className="h-8 w-8 inline mr-2" />;
     case 'code':
-      return <CodeBracketIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <CodeBracketIcon className="h-8 w-8 inline mr-2" />;
     case 'dollar':
-      return <CurrencyDollarIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <CurrencyDollarIcon className="h-8 w-8 inline mr-2" />;
     case 'sparkles':
-      return <SparklesIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <SparklesIcon className="h-8 w-8 inline mr-2" />;
     case 'wrench':
-      return <WrenchScrewdriverIcon className="h-8 w-8 text-zinc-400 inline mr-2" />;
+      return <WrenchScrewdriverIcon className="h-8 w-8 inline mr-2" />;
     // all other supported icons
   }
 }
@@ -37,7 +37,7 @@ export default function FeatureCard({ feature, description, iconName }: Props) {
 
   return (
     <div className="">
-      <div className="border-2 border-zinc-400 rounded-md p-2 min-h-full">
+      <div className="border-2 border-zinc-300 text-zinc-300 rounded-md p-2 min-h-full">
         {icon}
         <h1 className="text-xl inline font-bold">{feature}</h1>
         <p className="ml-1 pt-4 font-light">{description}</p>

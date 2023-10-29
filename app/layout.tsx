@@ -16,12 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <AuthProvider>
-      <html lang="en">
-        <body className={''}>
-          {children}
-        </body>
-      </html>
-    </AuthProvider>
+    <html lang="en">
+      <body className="bg-slate-800 text-zinc-100 h-screen">
+        {children}
+      </body>
+    </html>
   )
 }
